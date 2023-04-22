@@ -7,16 +7,16 @@ branding:
 inputs:
   arch:
     description: Device architecture
-    required: true
+    required: arm64
   compiler:
     description: Compiler to use
-    required: true
+    required: gcc/12
   defconfig:
     description: Defconfig to use
-    required: true
+    required: clover-perf.defconfig
   image:
     description: Kernel image name
-    required: true
+    required: Image.gz-dtb
 outputs:
   outfile:
     description: Zip file generated from build
